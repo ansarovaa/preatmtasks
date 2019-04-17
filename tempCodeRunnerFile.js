@@ -1,9 +1,15 @@
-var time = new Date();
-function taskTwo() {
-    hour = time.getHours();
-    minutes = time.getMinutes();
-    seconds = time.getSeconds();
-    totalSeconds = hour*3600+minutes*60+seconds;
-    console.log(totalSeconds);
+var happiness = {
+    love: 1,
+    life: 2,
+    art: 3,
+    travel: 4,
+    work: 5
 };
-taskTwo();
+function sortProperties() {
+    var arr1 = [];
+    for (var value in happiness) {
+        arr1.push([value, happiness[value]]);
+
+}
+};
+console.log(arr1);
