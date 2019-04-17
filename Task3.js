@@ -4,13 +4,13 @@ var happiness = {
     "travel": 3,
     "cats": 4,
     "money": 5
-};//define object happiness with 5 properties and their priorities
+}; //define object happiness with 5 properties and their priorities
 
 function taskThree() {
-sortProperties = Object.keys(happiness).sort(function (a, b) {
-    return happiness[b] - happiness[a]
-})//sort properties by their priorities from bigger to smaller
-console.log(sortProperties); //show new array of sorted properties
+    sortProperties = Object.keys(happiness).sort(function (a, b) {
+        return happiness[b] - happiness[a]
+    }) //sort properties by their priorities from bigger to smaller
+    console.log(sortProperties); //show new array of sorted properties
 };
 
-taskThree();//run function
+taskThree(); //run function
