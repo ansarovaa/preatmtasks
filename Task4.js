@@ -1,5 +1,5 @@
-function addWithDelay(a, b) { //create function 
-    var result = a + b //sum of parameters
+function addWithDelay(a,b) { //create function 
+    result=a+b;
     var promise = new Promise( //create new promise 
         function (resolve, reject) {
             if ((a >= 0) && (b >= 0)) { //check if both parameters are positive

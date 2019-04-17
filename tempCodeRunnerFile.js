@@ -1,15 +1,16 @@
 var happiness = {
-    love: 1,
-    life: 2,
-    art: 3,
-    travel: 4,
-    work: 5
+    "love": 1,
+    "life": 2,
+    "travel": 3,
+    "cats": 4,
+    "money": 5
 };
-function sortProperties() {
-    var arr1 = [];
-    for (var value in happiness) {
-        arr1.push([value, happiness[value]]);
 
-}
+function taskThree() {
+sortProperties = Object.keys(happiness).sort(function (a, b) {
+    return happiness[b] - happiness[a]
+})
+console.log(sortProperties); 
 };
-console.log(arr1);
+
+taskThree();
