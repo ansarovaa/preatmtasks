@@ -1,16 +1,16 @@
-var happiness = {
-    "love": 1,
-    "life": 2,
-    "travel": 3,
-    "cats": 4,
-    "money": 5
-};
+function addWithDelay() { //create function 
+    var arr1 = Array.from(arguments);
+    function isBigEnough(arguments) {
+        return arguments >= 10;
+      }
+ 
+            if (arr1.every(isBigEnough)==true) { //check if both parameters are positive
+              
+            } else {
+                console.log("no")
+            }
+            
 
-function taskThree() {
-sortProperties = Object.keys(happiness).sort(function (a, b) {
-    return happiness[b] - happiness[a]
-})
-console.log(sortProperties); 
-};
+        }
 
-taskThree();
+        addWithDelay(20,22);
